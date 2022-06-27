@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @admin %>
+
+<div>
+  <%= link_to "Edit this admin", edit_admin_path(@admin) ,class:"btn btn-secondary" %> |
+
+  <%= link_to "Back to admins", admins_path, class:"btn btn-secondary" %>
+  <div>
+  </br>
+  <%= link_to "Back to users", users_path,class:"btn btn-secondary" %>
+</div>
+</br>
+  <%= button_to "Destroy this admin", @admin, method: :delete, class:"btn btn-secondary" %>
+</div>

@@ -1,0 +1,13 @@
+
+<h1>Jobs Applications</h1>
+
+<div id="jobs_apps">
+  <% @jobs_apps.each do |jobs_app| %>
+    <%= render jobs_app %>
+    <p>
+      <%= link_to "Show This Job's Application", jobs_app, class:"btn btn-secondary" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Job Application", new_jobs_app_path , class:"btn btn-secondary"%>

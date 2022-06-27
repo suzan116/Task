@@ -1,0 +1,10 @@
+<h1>Editing Jobs Application</h1>
+
+<%= render "form", jobs_app: @jobs_app %>
+
+<br>
+
+<div>
+  <%= link_to "Show This Job's Applications", @jobs_app , class:"btn btn-secondary"%> |
+  <%= link_to "Back to Jobs Applications", jobs_apps_path, class:"btn btn-secondary" %>
+</div>

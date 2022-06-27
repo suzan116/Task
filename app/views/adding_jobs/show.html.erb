@@ -1,0 +1,8 @@
+
+<%= render @adding_job %>
+<div>
+<%= link_to "Edit Job", edit_adding_job_path(@adding_job), class:"btn btn-secondary" %>
+</br></br>
+<%= button_to "Delete Job", (@adding_job),method: :delete, class:"btn btn-danger" %>
+
+</div>

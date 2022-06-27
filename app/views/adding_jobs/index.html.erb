@@ -1,0 +1,12 @@
+
+<h1>Job Board</h1>
+
+<div id="adding_jobs">
+  <% @adding_jobs.each do |adding_job| %>
+    <%= render adding_job %>
+    <p>
+      <%= link_to "Show This Job's Details", adding_job, class:"btn btn-secondary" %>
+    </p>
+  <% end %>
+</div>
+
